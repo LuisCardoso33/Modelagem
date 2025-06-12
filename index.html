@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação - Sistema de Cardápio de Lanches</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    h3 {
+      color: #007BFF;
+      margin-top: 30px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    ul {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .highlight {
+      background-color: #e9f5ff;
+      padding: 8px;
+      border-left: 4px solid #007BFF;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Documentação</h1>
+    <h2>Sistema de Cardápio de Lanches</h2>
+    <p><strong>Data de geração:</strong> 11/06/2025</p>
+
+    <h3>1. Visão de Raio-X</h3>
+    <div class="highlight">
+      <strong>Entrada:</strong> Seleção de lanche pelo usuário via menu suspenso.<br>
+      <strong>Processamento:</strong> JS lê o objeto correspondente, renderiza ingredientes e preço.<br>
+      <strong>Saída:</strong> Lista de ingredientes, preço individual e pedido acumulado.
+    </div>
+    <div class="highlight">
+      <strong>Estado do Sistema:</strong> Armazenado em duas variáveis principais:<br>
+      - <code>pedido[]</code>: array com todos os itens escolhidos<br>
+      - <code>total</code>: soma acumulada dos preços
+    </div>
+    <div class="highlight">
+      <strong>Componentes principais:</strong>
+      <ul>
+        <li><code>HTML</code>: Interface com select, listas e botão</li>
+        <li><code>JavaScript</code>: Lógica de exibição e controle de estado</li>
+        <li><code>CSS</code>: Aparência e responsividade</li>
+      </ul>
+    </div>
+
+    <h3>2. Descrição Geral</h3>
+    <p>
+      Este sistema é um cardápio digital interativo que permite ao usuário selecionar lanches,
+      visualizar seus ingredientes e preços, adicionar ao pedido e visualizar o total acumulado.
+      Ideal para lanchonetes, sistemas de autoatendimento ou projetos didáticos.
+    </p>
+
+    <h3>3. Tecnologias Utilizadas</h3>
+    <ul>
+      <li>HTML5: Estrutura da página</li>
+      <li>CSS3: Estilização da interface</li>
+      <li>JavaScript: Lógica e interatividade do sistema</li>
+    </ul>
+
+    <h3>4. Funcionalidades</h3>
+    <ul>
+      <li>Lista de lanches com nomes, ingredientes e preços</li>
+      <li>Exibição dinâmica dos ingredientes ao selecionar um lanche</li>
+      <li>Botão para adicionar lanche ao pedido</li>
+      <li>Atualização automática da lista de pedidos e cálculo do total</li>
+    </ul>
+
+    <h3>5. Estrutura do Código</h3>
+    <p>
+      <strong>HTML:</strong> Define os elementos visuais da aplicação (select, lista de ingredientes, botão de adicionar e lista de pedidos).<br>
+      <strong>CSS:</strong> Define estilo da página, como cores, espaçamento, bordas e tipografia.<br>
+      <strong>JavaScript:</strong> 
+      <ul>
+        <li>Objeto 'lanches': contém os dados dos produtos</li>
+        <li>Eventos: 'change' no select e 'click' no botão de adicionar</li>
+        <li>Funções: atualização da lista de ingredientes, pedidos e cálculo do total</li>
+      </ul>
+    </p>
+
+    <h3>6. Melhorias Sugeridas</h3>
+    <ul>
+      <li>Permitir remoção de itens do pedido</li>
+      <li>Implementar quantidades para cada item</li>
+      <li>Adicionar imagens ilustrativas dos lanches</li>
+      <li>Salvar pedidos usando localStorage ou banco de dados</li>
+      <li>Gerar recibo em PDF para impressão</li>
+    </ul>
+
+    <h3>7. Considerações Finais</h3>
+    <p>
+      O projeto demonstra habilidades básicas em desenvolvimento web front-end,
+      manipulação de DOM e controle de estado do pedido. É uma excelente base para expandir
+      e transformar em um sistema mais robusto com backend.
+    </p>
+  </div>
+</body>
+</html>
